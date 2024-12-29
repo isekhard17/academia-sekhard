@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Estilos base para inputs y selects */
+  input, select, textarea {
+    @apply text-gray-900;
+  }
+
+  /* Estilos para modo oscuro */
+  .dark input,
+  .dark select,
+  .dark textarea {
+    @apply text-white;
+  }
+
+  /* Estilos para las opciones en modo oscuro */
+  .dark select option {
+    @apply bg-gray-700 text-white;
+  }
+
+  /* Estilos para el placeholder en modo oscuro */
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    @apply text-gray-400;
+  }
+
+  /* Estilos para el texto seleccionado en modo oscuro */
+  .dark input::selection,
+  .dark textarea::selection {
+    @apply bg-indigo-500/30 text-white;
+  }
+} 
